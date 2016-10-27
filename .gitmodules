@@ -1,0 +1,3 @@
+[submodule "uncrustify_config_preview"]
+	path = uncrustify_config_preview
+	url = https://github.com/CDanU/uncrustify_config_preview.git
