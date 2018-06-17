@@ -1,4 +1,50 @@
-/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/** Daniel Chumak | uncrustify_config v0.1.8 | GPLv2+ License
+    github.com/CDanU/uncrustify_config_preview */
+.onoffswitch {
+  width: 125px;
+  overflow: hidden;
+  border: 1px solid #222;
+  border-radius: 5px;
+  margin: 7.5px;
+  user-select: none; }
+
+.onoffswitch-label {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  height: 25px;
+  width: 200%;
+  transition: margin 0.3s ease-in 0s; }
+  .onoffswitch-label:hover {
+    color: #0F0; }
+
+.onoffswitch-on, .onoffswitch-off {
+  float: left;
+  line-height: 25px;
+  height: 25px;
+  width: 40%;
+  font-size: 19px;
+  font-weight: bold; }
+
+.onoffswitch-ridge {
+  width: 10%;
+  background: #000;
+  float: left;
+  height: 100%; }
+
+.onoffswitch-label .onoffswitch-on {
+  margin-left: 5%; }
+
+.onoffswitch-label .onoffswitch-off {
+  margin-right: 5%;
+  text-align: right; }
+
+.onoffswitch-checkbox {
+  display: none; }
+  .onoffswitch-checkbox:checked + .onoffswitch-label {
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s; }
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -16,6 +62,12 @@ html {
 
 /* Sections
    ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -192,14 +244,22 @@ svg:not(:root) {
 /* Forms
    ========================================================================== */
 /**
- * Remove the margin in Firefox and Safari.
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
  */
 button,
 input,
 optgroup,
 select,
 textarea {
-  margin: 0; }
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
@@ -249,6 +309,12 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -368,53 +434,7 @@ template {
  */
 [hidden] {
   display: none; }
-/** Daniel Chumak | uncrustify_config v0.1.7 | GPLv2+ License
-    github.com/CDanU/uncrustify_config_preview */
-.onoffswitch {
-  width: 125px;
-  overflow: hidden;
-  border: 1px solid #222;
-  border-radius: 5px;
-  margin: 7.5px;
-  user-select: none; }
-
-.onoffswitch-label {
-  cursor: pointer;
-  display: block;
-  overflow: hidden;
-  height: 25px;
-  width: 200%;
-  transition: margin 0.3s ease-in 0s; }
-  .onoffswitch-label:hover {
-    color: #0F0; }
-
-.onoffswitch-on, .onoffswitch-off {
-  float: left;
-  line-height: 25px;
-  height: 25px;
-  width: 40%;
-  font-size: 19px;
-  font-weight: bold; }
-
-.onoffswitch-ridge {
-  width: 10%;
-  background: #000;
-  float: left;
-  height: 100%; }
-
-.onoffswitch-label .onoffswitch-on {
-  margin-left: 5%; }
-
-.onoffswitch-label .onoffswitch-off {
-  margin-right: 5%;
-  text-align: right; }
-
-.onoffswitch-checkbox {
-  display: none; }
-  .onoffswitch-checkbox:checked + .onoffswitch-label {
-    margin-left: -100%;
-    transition: margin 0.3s ease-in 0s; }
-/** Daniel Chumak | uncrustify_config v0.1.7 | GPLv2+ License
+/** Daniel Chumak | uncrustify_config v0.1.8 | GPLv2+ License
     github.com/CDanU/uncrustify_config */
 .title, .a_uncRepo {
   color: white;
